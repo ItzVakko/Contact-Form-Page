@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts Form</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <form class="form-wrapper">
+      <h1>Contact Us</h1>
+
+      <!-- Name and LastName inputs -->
+      <div class="two-inputs-one-line">
+        <div class="one-line-input-wrapper">
+          <label for="firstname"
+            ><span>First Name <span class="green">*</span></span></label
+          ><br />
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+
+        <div class="one-line-input-wrapper">
+          <label for="lastname"
+            ><span>Last Name <span class="green">*</span></span></label
+          ><br />
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+      </div>
+
+      <!-- Mail Input -->
+      <label for="email"
+        ><span>Email Address <span class="green">*</span></span></label
+      ><br />
+      <input type="email" id="email" name="email" required />
+
+      <!-- Query type Inputs -->
+      <div>
+        <label for="querytype"
+          ><span>Query Type <span class="green">*</span></span></label
+        >
+        <div class="one-line-input-wrapper two-inputs-one-line">
+          <div class="radio-input-box radio-input-box-forjs">
+            <input
+              class="radio-input"
+              type="radio"
+              id="querytype"
+              value="General Enquiry"
+              name="querytype"
+              required
+            />
+            <span>General Enquiry</span>
+          </div>
+          <div class="radio-input-box radio-input-box-forjs1">
+            <input
+              class="radio-input"
+              type="radio"
+              id="querytype2"
+              value="Support Request"
+              name="querytype"
+              required
+            />
+            <span>Support Request</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Input -->
+      <label for="message"
+        ><span>Message <span class="green">*</span></span></label
+      ><br />
+      <textarea
+        class="message-input"
+        id="message"
+        name="message"
+        required
+      ></textarea>
+
+      <!-- contract checkbox input -->
+      <div class="checkbox-contract-wrapper">
+        <input
+          class="contract-input"
+          type="checkbox"
+          id="agree"
+          name="agree"
+          required
+        />
+        <label for="agree"
+          ><span
+            >I consent to being contacted by the team
+            <span class="green">*</span></span
+          ></label
+        >
+      </div>
+
+      <!-- Submit button here -->
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
